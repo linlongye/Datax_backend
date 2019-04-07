@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: datax_admin
+  datasource:
+    type: org.apache.commons.dbcp2.BasicDataSource
+    dbcp2:
+      driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:D:\\db\db.db
+    username:
+    password:
+  jpa:
+    database-platform: com.hl.datax.dialcet.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com:
+      hl:
+        datax: info
